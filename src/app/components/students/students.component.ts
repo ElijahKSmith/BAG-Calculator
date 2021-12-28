@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { StudentCardComponent } from './student-card/student-card.component';
 import studentsData from '../../../assets/students/icons/students.json';
 
 @Component({

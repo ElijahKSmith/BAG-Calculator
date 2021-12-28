@@ -1,34 +1,26 @@
 <h1>Available</h1>
 <mat-grid-list cols="6" rowHeight="200px">
   <mat-grid-tile *ngFor="let student of activeStudents">
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title>{{ student | underscoreToSpace }}</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <img
-          [src]="
-            '../../../assets/students/icons/100px/100px-' + student + '.png'
-          "
-        />
-      </mat-card-content>
-    </mat-card>
+    <app-student-card
+      [studentName]="student"
+      [studentImage]="
+        '../../../assets/students/icons/100px/100px-' + student + '.png'
+      "
+      [disabled]="false"
+    >
+    </app-student-card>
   </mat-grid-tile>
 </mat-grid-list>
+<h1>Not in Global</h1>
 <mat-grid-list cols="6" rowHeight="250px">
   <mat-grid-tile *ngFor="let student of disabledStudents">
-    <mat-card>
-      <mat-card-header>
-        <mat-card-title>{{ student | underscoreToSpace }}</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <img
-          [src]="
-            '../../../assets/students/icons/100px/100px-' + student + '.png'
-          "
-          style="filter: grayscale(100%)"
-        />
-      </mat-card-content>
-    </mat-card>
+    <app-student-card
+      [studentName]="student"
+      [studentImage]="
+        '../../../assets/students/icons/100px/100px-' + student + '.png'
+      "
+      [disabled]="true"
+    >
+    </app-student-card>
   </mat-grid-tile>
 </mat-grid-list>

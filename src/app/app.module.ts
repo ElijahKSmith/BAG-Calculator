@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MissionSelectModule } from './components/mission-select/mission-select.module';
 import { NavbarModule } from './components/navbar/navbar.module';
 import { StudentsModule } from './components/students/students.module';
 
@@ -13,6 +14,7 @@ import { StudentsModule } from './components/students/students.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
+    MissionSelectModule,
     NavbarModule,
     StudentsModule,
   ],
