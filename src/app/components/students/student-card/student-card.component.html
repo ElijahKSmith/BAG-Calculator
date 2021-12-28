@@ -1,11 +1,9 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>{{ studentName | underscoreToSpace }}</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <img
-      [src]="studentImage"
-      [style]="disabled ? 'filter: grayscale(100%)' : ''"
-    />
-  </mat-card-content>
-</mat-card>
+<div matRipple [matRippleDisabled]="disabled" class="student-card">
+  <img
+    [src]="studentImage"
+    [style]="disabled ? 'filter: grayscale(100%)' : ''"
+  />
+  <div class="bottom-bar">
+    <div class="student-name">{{ studentName | underscoreToSpace }}</div>
+  </div>
+</div>

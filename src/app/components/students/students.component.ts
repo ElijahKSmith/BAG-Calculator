@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { StudentCardComponent } from './student-card/student-card.component';
 import studentsData from '../../../assets/students/icons/students.json';
 
 @Component({
@@ -11,6 +10,7 @@ import studentsData from '../../../assets/students/icons/students.json';
 export class StudentsComponent implements OnInit {
   activeStudents: string[] = [];
   disabledStudents: string[] = [];
+  imgSize = '150px';
 
   constructor() {}
 

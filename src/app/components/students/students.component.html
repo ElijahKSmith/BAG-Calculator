@@ -4,7 +4,13 @@
     <app-student-card
       [studentName]="student"
       [studentImage]="
-        '../../../assets/students/icons/100px/100px-' + student + '.png'
+        '../../../assets/students/icons/' +
+        imgSize +
+        '/' +
+        imgSize +
+        '-' +
+        student +
+        '.png'
       "
       [disabled]="false"
     >
@@ -17,7 +23,13 @@
     <app-student-card
       [studentName]="student"
       [studentImage]="
-        '../../../assets/students/icons/100px/100px-' + student + '.png'
+        '../../../assets/students/icons/' +
+        imgSize +
+        '/' +
+        imgSize +
+        '-' +
+        student +
+        '.png'
       "
       [disabled]="true"
     >

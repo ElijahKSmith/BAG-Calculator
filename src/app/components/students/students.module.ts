@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatRippleModule } from '@angular/material/core';
 import { NgModule } from '@angular/core';
 
 import { CustomPipesModule } from '../../pipes/custom-pipes.module';
@@ -14,7 +14,12 @@ import { StudentsComponent } from './students.component';
     StudentDialogComponent,
     StudentsComponent,
   ],
-  imports: [CommonModule, CustomPipesModule, MatCardModule, MatGridListModule],
+  imports: [
+    CommonModule,
+    CustomPipesModule,
+    MatGridListModule,
+    MatRippleModule,
+  ],
   exports: [StudentsComponent],
 })
 export class StudentsModule {}
