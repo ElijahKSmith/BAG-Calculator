@@ -1,4 +1,5 @@
 import { CommonModule } from '@angular/common';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatRippleModule } from '@angular/material/core';
 import { NgModule } from '@angular/core';
@@ -17,6 +18,7 @@ import { StudentsComponent } from './students.component';
   imports: [
     CommonModule,
     CustomPipesModule,
+    MatDividerModule,
     MatGridListModule,
     MatRippleModule,
   ],
