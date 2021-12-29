@@ -1,0 +1,43 @@
+<div class="section-title">
+  <h1>Available</h1>
+</div>
+<mat-grid-list cols="6" rowHeight="200px">
+  <mat-grid-tile *ngFor="let student of activeStudents">
+    <app-student-card
+      [studentName]="student"
+      [studentImage]="
+        '../../../assets/students/icons/' +
+        imgSize +
+        '/' +
+        imgSize +
+        '-' +
+        student +
+        '.png'
+      "
+      [disabled]="false"
+    >
+    </app-student-card>
+  </mat-grid-tile>
+</mat-grid-list>
+<mat-divider></mat-divider>
+<div class="section-title">
+  <h1>Not in Global</h1>
+</div>
+<mat-grid-list cols="6" rowHeight="200px">
+  <mat-grid-tile *ngFor="let student of disabledStudents">
+    <app-student-card
+      [studentName]="student"
+      [studentImage]="
+        '../../../assets/students/icons/' +
+        imgSize +
+        '/' +
+        imgSize +
+        '-' +
+        student +
+        '.png'
+      "
+      [disabled]="true"
+    >
+    </app-student-card>
+  </mat-grid-tile>
+</mat-grid-list>
