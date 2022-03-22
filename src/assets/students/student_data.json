@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "name": "Airi",
+      "mystic": 2,
+      "school": "Trinity",
+      "role": "Support",
+      "position": "Back",
+      "attack": "Explosive",
+      "defense": "Light",
+      "class": "Special",
+      "weapon": "SMG",
+      "cover": false,
+      "affinity": {
+        "urban": "A",
+        "indoors": "D",
+        "outdoors": "A"
+      },
+      "slot1": "Shoes",
+      "slot2": "Hairpin",
+      "slot3": "Necklace",
+      "skills": {
+        "ex": "SKILLICON_AIRI_EXSKILL",
+        "normal": "COMMON_SKILLICON_STATDEBUFF",
+        "passive": "COMMON_SKILLICON_WEAPONBUFF",
+        "sub": "COMMON_SKILLICON_WEAPONBUFF"
+      },
+      "baseStats": {
+        "attack": 167,
+        "defense": 20,
+        "hp": 2256,
+        "healing": 1605,
+        "accuracy": 99,
+        "evasion": 1196,
+        "critical_rate": 199,
+        "critical_dmg": 200,
+        "stability": 1615,
+        "range": 1000,
+        "cc_str": 100,
+        "cc_res": 100
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import studentsData from '../../../assets/students/icons/students.json';
+import studentList from '../../../assets/students/students.json';
 
 @Component({
   selector: 'app-students',
@@ -15,7 +15,7 @@ export class StudentsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.activeStudents = studentsData.activeStudents;
-    this.disabledStudents = studentsData.disabledStudents;
+    this.activeStudents = studentList.activeStudents;
+    this.disabledStudents = studentList.disabledStudents;
   }
 }

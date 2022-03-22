@@ -1,4 +1,7 @@
 import { CommonModule } from '@angular/common';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatRippleModule } from '@angular/material/core';
@@ -18,6 +21,9 @@ import { StudentsComponent } from './students.component';
   imports: [
     CommonModule,
     CustomPipesModule,
+    FlexLayoutModule,
+    MatButtonModule,
+    MatDialogModule,
     MatDividerModule,
     MatGridListModule,
     MatRippleModule,

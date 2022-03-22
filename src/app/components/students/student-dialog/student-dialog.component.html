@@ -1,1 +1,14 @@
-<p>student-dialog works!</p>
+<h1 mat-dialog-title>{{ data.student | underscoreToSpace }}</h1>
+<div mat-dialog-content fxLayout="row">
+  <img
+    [src]="'../../../assets/students/full/' + data.student + '_full.png'"
+    fxFlex="33"
+  />
+  <div fxFlex></div>
+  <div fxFlex="66"></div>
+</div>
+<div mat-dialog-actions fxLayout="row" fxLayoutAlign="start center">
+  <div fxFlex></div>
+  <button mat-button (click)="closeDialog()" class="red-button">Cancel</button>
+  <button mat-button class="green-button">Save</button>
+</div>
